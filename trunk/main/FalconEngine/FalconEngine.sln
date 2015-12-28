@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FalconEngine", "FalconEngine\FalconEngine.vcxproj", "{B625E553-841F-453D-B17C-DD8D9278DB37}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6E92FC52-2A9D-48EB-AD12-72D15DAED777}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B625E553-841F-453D-B17C-DD8D9278DB37}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B625E553-841F-453D-B17C-DD8D9278DB37}.Debug|Win32.Build.0 = Debug|Win32
+		{B625E553-841F-453D-B17C-DD8D9278DB37}.Release|Win32.ActiveCfg = Release|Win32
+		{B625E553-841F-453D-B17C-DD8D9278DB37}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B625E553-841F-453D-B17C-DD8D9278DB37}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>FalconEngine</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>.\3rdParty\boost\include;$(IncludePath)</IncludePath>
+    <LibraryPath>.\3rdParty\boost\lib;$(LibraryPath)</LibraryPath>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <LibraryPath>.\3rdParty\boost\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>./3rdParty/bullet2.79/Extras/Serialize/BulletWorldImporter;./3rdParty/bullet2.79/Extras/Serialize/BulletFileLoader;./3rdParty/bullet2.79/include;./3rdParty/glew1.7/include;./3rdParty/assimp2.0/include;./3rdParty/lua5.1/include;./3rdParty/luabind0.9/include;./3rdParty/soil/include;./3rdParty/freetype2.4.8/include;./3rdParty/FMOD/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>./3rdParty/bullet2.79/lib;./3rdParty/glew1.7;./3rdParty/assimp2.0;./3rdParty/lua5.1;./3rdParty/luabind0.9;./3rdParty/soil/lib;./3rdParty/boost/lib;./3rdParty/freetype2.4.8;./3rdParty/FMOD/lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SOIL.lib;luabindd.lib;lua5.1.lib;glew32.lib;opengl32.lib;assimp.lib;BulletFileLoader_Debug.lib;BulletWorldImporter_Debug.lib;LinearMath_Debug.lib;BulletCollision_Debug.lib;BulletDynamics_Debug.lib;freetype248_D.lib;fmodex_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <Profile>true</Profile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>./3rdParty/bullet2.79/include;./3rdParty/glew1.7/include;./3rdParty/assimp2.0/include;./3rdParty/lua5.1/include;./3rdParty/luabind0.9/include;./3rdParty/soil/include;./3rdParty/boost/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>./3rdParty/bullet2.79/lib;./3rdParty/glew1.7;./3rdParty/assimp2.0;./3rdParty/lua5.1;./3rdParty/luabind0.9;./3rdParty/soil/lib;./3rdParty/boost/lib</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\BaseApp.cpp" />
+    <ClCompile Include="src\BasicColorShader.cpp" />
+    <ClCompile Include="src\Button.cpp" />
+    <ClCompile Include="src\CallCenter.cpp" />
+    <ClCompile Include="src\Camera.cpp" />
+    <ClCompile Include="src\DialogLogger.cpp" />
+    <ClCompile Include="src\DiffuseTextureShader.cpp" />
+    <ClCompile Include="src\Element2D.cpp" />
+    <ClCompile Include="src\Element2DManager.cpp" />
+    <ClCompile Include="src\FalconFont.cpp" />
+    <ClCompile Include="src\FalconState.cpp" />
+    <ClCompile Include="src\FlyCamera.cpp" />
+    <ClCompile Include="src\FontManager.cpp" />
+    <ClCompile Include="src\FontShader.cpp" />
+    <ClCompile Include="src\GameObject.cpp" />
+    <ClCompile Include="src\GameTimer.cpp" />
+    <ClCompile Include="src\GameWinMain.cpp" />
+    <ClCompile Include="src\IndexBuffer.cpp" />
+    <ClCompile Include="src\InputState.cpp" />
+    <ClCompile Include="src\InputStateManager.cpp" />
+    <ClCompile Include="src\LogManager.cpp" />
+    <ClCompile Include="src\LuaVirtualMachine.cpp" />
+    <ClCompile Include="src\Menu.cpp" />
+    <ClCompile Include="src\Mesh.cpp" />
+    <ClCompile Include="src\MeshManager.cpp" />
+    <ClCompile Include="src\OutputLogger.cpp" />
+    <ClCompile Include="src\PhysicsBox.cpp" />
+    <ClCompile Include="src\PhysicsDebugRenderer.cpp" />
+    <ClCompile Include="src\PhysicsObject.cpp" />
+    <ClCompile Include="src\PhysicsWorld.cpp" />
+    <ClCompile Include="src\RenderContext.cpp" />
+    <ClCompile Include="src\ResourceManager.cpp" />
+    <ClCompile Include="src\Scene.cpp" />
+    <ClCompile Include="src\Shader.cpp" />
+    <ClCompile Include="src\ShaderManager.cpp" />
+    <ClCompile Include="src\ShaderVariable.cpp" />
+    <ClCompile Include="src\SkyBox.cpp" />
+    <ClCompile Include="src\SkyBoxShader.cpp" />
+    <ClCompile Include="src\SoundManager.cpp" />
+    <ClCompile Include="src\stdafx.cpp" />
+    <ClCompile Include="src\TextureManager.cpp" />
+    <ClCompile Include="src\VertexBuffer.cpp" />
+    <ClCompile Include="src\vmath.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\BoostUtils.h" />
+    <ClInclude Include="src\BoundingSphere.h" />
+    <ClInclude Include="src\Button.h" />
+    <ClInclude Include="src\CallCenter.h" />
+    <ClInclude Include="src\DiffuseTextureShader.h" />
+    <ClInclude Include="src\Element2D.h" />
+    <ClInclude Include="src\Element2DManager.h" />
+    <ClInclude Include="src\FalconFont.h" />
+    <ClInclude Include="src\FalconLuaBind.h" />
+    <ClInclude Include="src\FalconState.h" />
+    <ClInclude Include="src\FlyCamera.h" />
+    <ClInclude Include="src\BasicColorShader.h" />
+    <ClInclude Include="src\FalconUtils.h" />
+    <ClInclude Include="src\BaseApp.h" />
+    <ClInclude Include="src\Camera.h" />
+    <ClInclude Include="src\DialogLogger.h" />
+    <ClInclude Include="src\FalconMath.h" />
+    <ClInclude Include="src\FontManager.h" />
+    <ClInclude Include="src\FontShader.h" />
+    <ClInclude Include="src\GameObject.h" />
+    <ClInclude Include="src\GameTimer.h" />
+    <ClInclude Include="src\GameWinMain.h" />
+    <ClInclude Include="src\Callable.h" />
+    <ClInclude Include="src\IndexBuffer.h" />
+    <ClInclude Include="src\InputState.h" />
+    <ClInclude Include="src\InputStateManager.h" />
+    <ClInclude Include="src\Logger.h" />
+    <ClInclude Include="src\LogManager.h" />
+    <ClInclude Include="src\LuaVirtualMachine.h" />
+    <ClInclude Include="src\Menu.h" />
+    <ClInclude Include="src\Mesh.h" />
+    <ClInclude Include="src\MeshManager.h" />
+    <ClInclude Include="src\MotionState.h" />
+    <ClInclude Include="src\OutputLogger.h" />
+    <ClInclude Include="src\PhysicsBox.h" />
+    <ClInclude Include="src\PhysicsDebugRenderer.h" />
+    <ClInclude Include="src\PhysicsObject.h" />
+    <ClInclude Include="src\PhysicsWorld.h" />
+    <ClInclude Include="src\RenderContext.h" />
+    <ClInclude Include="src\ResourceManager.h" />
+    <ClInclude Include="src\Scene.h" />
+    <ClInclude Include="src\Shader.h" />
+    <ClInclude Include="src\ShaderManager.h" />
+    <ClInclude Include="src\ShaderVariable.h" />
+    <ClInclude Include="src\SkyBox.h" />
+    <ClInclude Include="src\SkyBoxShader.h" />
+    <ClInclude Include="src\SoundManager.h" />
+    <ClInclude Include="src\stdafx.h" />
+    <ClInclude Include="src\TextureManager.h" />
+    <ClInclude Include="src\typedefs.h" />
+    <ClInclude Include="src\VertexBuffer.h" />
+    <ClInclude Include="src\vmath.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

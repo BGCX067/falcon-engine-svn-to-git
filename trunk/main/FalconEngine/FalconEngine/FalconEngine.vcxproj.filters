@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\GameWinMain.cpp" />
+    <ClCompile Include="src\stdafx.cpp" />
+    <ClCompile Include="src\LogManager.cpp">
+      <Filter>Core\Logging</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DialogLogger.cpp">
+      <Filter>Core\Logging</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OutputLogger.cpp">
+      <Filter>Core\Logging</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MeshManager.cpp">
+      <Filter>Core\ResourceManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ResourceManager.cpp">
+      <Filter>Core\ResourceManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TextureManager.cpp">
+      <Filter>Core\ResourceManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BaseApp.cpp">
+      <Filter>Core\BaseApp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Mesh.cpp">
+      <Filter>Core\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameObject.cpp">
+      <Filter>Core\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RenderContext.cpp">
+      <Filter>Core\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\InputState.cpp">
+      <Filter>Core\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\InputStateManager.cpp">
+      <Filter>Core\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameTimer.cpp">
+      <Filter>Core\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vmath.cpp">
+      <Filter>Core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ShaderManager.cpp">
+      <Filter>Core\ResourceManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BasicColorShader.cpp">
+      <Filter>Core\Renderer\shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IndexBuffer.cpp">
+      <Filter>Core\Renderer\Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VertexBuffer.cpp">
+      <Filter>Core\Renderer\Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Shader.cpp">
+      <Filter>Core\Renderer\shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ShaderVariable.cpp">
+      <Filter>Core\Renderer\shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Camera.cpp">
+      <Filter>Core\Renderer\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FlyCamera.cpp">
+      <Filter>Core\Renderer\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DiffuseTextureShader.cpp">
+      <Filter>Core\Renderer\shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LuaVirtualMachine.cpp">
+      <Filter>Core\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene.cpp">
+      <Filter>Core\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PhysicsWorld.cpp">
+      <Filter>Core\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SkyBox.cpp">
+      <Filter>Core\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SkyBoxShader.cpp">
+      <Filter>Core\Renderer\shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PhysicsDebugRenderer.cpp">
+      <Filter>Core\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PhysicsObject.cpp">
+      <Filter>Core\Physics\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PhysicsBox.cpp">
+      <Filter>Core\Physics\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FalconState.cpp">
+      <Filter>Core\StateManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Element2D.cpp">
+      <Filter>Core\2D</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CallCenter.cpp">
+      <Filter>Core\2D\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Button.cpp">
+      <Filter>Core\2D\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Menu.cpp">
+      <Filter>Core\2D\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Element2DManager.cpp">
+      <Filter>Core\2D</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FalconFont.cpp">
+      <Filter>Core\2D\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FontShader.cpp">
+      <Filter>Core\Renderer\shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FontManager.cpp">
+      <Filter>Core\ResourceManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SoundManager.cpp">
+      <Filter>Core\ResourceManager</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\GameWinMain.h" />
+    <ClInclude Include="src\stdafx.h" />
+    <ClInclude Include="src\typedefs.h" />
+    <ClInclude Include="src\Logger.h">
+      <Filter>Core\Logging</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LogManager.h">
+      <Filter>Core\Logging</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DialogLogger.h">
+      <Filter>Core\Logging</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OutputLogger.h">
+      <Filter>Core\Logging</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FalconMath.h">
+      <Filter>Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MeshManager.h">
+      <Filter>Core\ResourceManager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ResourceManager.h">
+      <Filter>Core\ResourceManager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TextureManager.h">
+      <Filter>Core\ResourceManager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameObject.h">
+      <Filter>Core\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BaseApp.h">
+      <Filter>Core\BaseApp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Mesh.h">
+      <Filter>Core\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RenderContext.h">
+      <Filter>Core\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\InputState.h">
+      <Filter>Core\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="src\InputStateManager.h">
+      <Filter>Core\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameTimer.h">
+      <Filter>Core\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="src\vmath.h">
+      <Filter>Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ShaderManager.h">
+      <Filter>Core\ResourceManager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FalconUtils.h" />
+    <ClInclude Include="src\BasicColorShader.h">
+      <Filter>Core\Renderer\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="src\IndexBuffer.h">
+      <Filter>Core\Renderer\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VertexBuffer.h">
+      <Filter>Core\Renderer\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ShaderVariable.h">
+      <Filter>Core\Renderer\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Shader.h">
+      <Filter>Core\Renderer\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Camera.h">
+      <Filter>Core\Renderer\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FlyCamera.h">
+      <Filter>Core\Renderer\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DiffuseTextureShader.h">
+      <Filter>Core\Renderer\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FalconLuaBind.h">
+      <Filter>Core\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LuaVirtualMachine.h">
+      <Filter>Core\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene.h">
+      <Filter>Core\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BoundingSphere.h">
+      <Filter>Core\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PhysicsWorld.h">
+      <Filter>Core\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SkyBox.h">
+      <Filter>Core\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SkyBoxShader.h">
+      <Filter>Core\Renderer\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PhysicsDebugRenderer.h">
+      <Filter>Core\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PhysicsObject.h">
+      <Filter>Core\Physics\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PhysicsBox.h">
+      <Filter>Core\Physics\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MotionState.h">
+      <Filter>Core\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BoostUtils.h" />
+    <ClInclude Include="src\FalconState.h">
+      <Filter>Core\StateManager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Element2D.h">
+      <Filter>Core\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Button.h">
+      <Filter>Core\2D\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CallCenter.h">
+      <Filter>Core\2D\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Menu.h">
+      <Filter>Core\2D\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Callable.h">
+      <Filter>Core\2D\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Element2DManager.h">
+      <Filter>Core\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FalconFont.h">
+      <Filter>Core\2D\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FontShader.h">
+      <Filter>Core\Renderer\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FontManager.h">
+      <Filter>Core\ResourceManager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SoundManager.h">
+      <Filter>Core\ResourceManager</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Core">
+      <UniqueIdentifier>{69eff2c4-b5c0-4e50-a803-15205b1eb745}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Logging">
+      <UniqueIdentifier>{cb4c2b15-69b8-46bd-a0bc-a704031ef36f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Math">
+      <UniqueIdentifier>{6f6d97ec-1773-46c1-b3ad-32d3f72c834b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\ResourceManager">
+      <UniqueIdentifier>{b728489b-a0df-4285-9777-1e1ff1760641}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Renderer">
+      <UniqueIdentifier>{5033bc9c-1c78-42cd-a44c-0b178cb2bca1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\GameObject">
+      <UniqueIdentifier>{c7037dd6-8c86-4120-9da8-0fe511af2b4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\BaseApp">
+      <UniqueIdentifier>{def7d708-f054-4157-9cf3-01770ee2af88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Script">
+      <UniqueIdentifier>{fbdfbf5f-9279-4928-a7e5-78f2bfe8bcb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Input">
+      <UniqueIdentifier>{088e8100-6088-48e1-94b4-b89d9ecfb128}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Renderer\shaders">
+      <UniqueIdentifier>{80fb0335-08a2-4024-b5b3-a781a1564066}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Renderer\Buffers">
+      <UniqueIdentifier>{5c33f3ab-6ff0-4a9a-af2b-d12a372a3efe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Renderer\Camera">
+      <UniqueIdentifier>{bf7e6041-2c82-4130-8cda-030e39bba5d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Geometry">
+      <UniqueIdentifier>{db568238-3c1b-49be-baf1-cad007e2294e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Physics">
+      <UniqueIdentifier>{4719b1df-1915-40f3-ade6-34c6d81adcf7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Physics\Shapes">
+      <UniqueIdentifier>{ede41725-0ff8-44e1-8133-652de8520c2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\StateManager">
+      <UniqueIdentifier>{0e1e1cbb-1a6b-4ff9-9016-695fef7e17f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\2D">
+      <UniqueIdentifier>{b70d8094-8f0d-4d80-a8f1-215002b8886c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\2D\Menu">
+      <UniqueIdentifier>{fcf167a4-eef9-4de2-92bf-a10080b2b29b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\2D\Text">
+      <UniqueIdentifier>{902ac02e-be3b-4d89-9306-af0c11b7c2c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Sound">
+      <UniqueIdentifier>{3c2ed545-d5d7-467c-b131-e76c7485d874}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
